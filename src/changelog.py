@@ -160,6 +160,7 @@ def main():
     ]
 
     changelog = generate_changelog(from_, to, all_msgs)
+    print(changelog, end="\n\n\n")
     with open("CHANGELOG.md", "w") as file:
         file.write(changelog)
 
