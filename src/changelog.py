@@ -12,8 +12,9 @@ type_infos = [
 ]
 
 
-def _call(command):
+def _call(command: str):
     """Run a command and return the output, handling errors gracefully."""
+    command: list = command.split(" ")
     return subprocess.check_output(
         command, text=True, stderr=subprocess.DEVNULL
     ).strip()
