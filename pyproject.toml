@@ -8,7 +8,7 @@ classifiers = [
   "Programming Language :: Python :: 3",
   "Operating System :: OS Independent",
 ]
-dependencies = ["build", "pre-commit"]
+dependencies = ["build"]
 description = "Generate changelog based on git commit"
 name = "evative7-changeloggen"
 readme = "README.md"
@@ -16,7 +16,7 @@ requires-python = ">=3.6"
 version = "0.0.1"
 
 [project.optional-dependencies]
-dev = ["black", "isort", "flake8", "pytest"]
+dev = ["black", "isort", "flake8", "pytest", "pre-commit"]
 
 [project.scripts]
 changelog = "changelog:main"
