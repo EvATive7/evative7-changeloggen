@@ -73,7 +73,7 @@ def get_tags():
 def get_commit_messages(from_, to, contains_from=False):
     """Get Git commit logs between from_commit and to_commit."""
     log_range = f"{from_} {to}" if contains_from else f"{from_}..{to}"
-    return _call(f'git log {log_range} --no-merges --pretty=format:"%s"').splitlines()
+    return _call(f"git log {log_range} --no-merges --pretty=format:%s").splitlines()
 
 
 def generate_changelog(from_, to, all_msgs):
