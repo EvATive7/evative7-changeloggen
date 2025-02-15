@@ -4,25 +4,26 @@ requires = ["setuptools", "wheel"]
 
 [project]
 authors = [{ name = "EvATive7" }]
-classifiers = [ # TODO: Finish this
+classifiers = [
   "Programming Language :: Python :: 3",
   "Operating System :: OS Independent",
 ]
-dependencies = ["build", "pre-commit"] # TODO: Finish this
-description = "" # TODO: Finish this
-name = "name" # TODO: Finish this
+dependencies = ["build", "pre-commit"]
+description = "Generate changelog based on git commit"
+name = "evative7-changeloggen"
 readme = "README.md"
 requires-python = ">=3.6"
 version = "0.0.1"
 
 [project.optional-dependencies]
-dev = ["black", "isort", "flake8", "pytest"] # TODO: Finish this
+dev = ["black", "isort", "flake8", "pytest"]
 
-# [project.scripts]
-# changelog = "changelog:main" # TODO: Finish this, if a script is needed
+[project.scripts]
+changelog = "changelog:main"
+
 
 [project.urls]
-"Homepage" = "https://github.com/EvATive7/" # TODO: Finish this
+"Homepage" = "https://github.com/EvATive7/evative7-changeloggen"
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
@@ -33,5 +34,3 @@ profile = "black"
 
 [tool.setuptools.package-dir]
 "" = "src"
-
-# TODO: Finish this file if you need to add anything
